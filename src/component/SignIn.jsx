@@ -24,12 +24,12 @@ const SignIn = () => {
                         <div className='flex mt-4 space-x-4'>
                             <div className='flex items-center bg-white py-2 px-3 md:px-7 rounded-xl cursor-pointer'>
                                 <img src={googleIcon} alt="" className='w-[14px] h-[14px]' />
-                                <a href="/" className='text-[10px] md:text-xs font-normal ml-2 text-[#858585]'>Sign in with Google</a>
+                                <a href="/google" className='text-[10px] md:text-xs font-normal ml-2 text-[#858585]'>Sign in with Google</a>
                             </div>
 
                             <div className='flex items-center bg-white py-2 px-3 md:px-7 rounded-xl cursor-pointer'>
                                 <img src={appleIcon} alt="" className='w-[14px] h-[14px]' />
-                                <a href="/" className='text-[10px] md:text-xs font-normal ml-2 text-[#858585]'>Sign in with Apple</a>
+                                <a href="/apple" className='text-[10px] md:text-xs font-normal ml-2 text-[#858585]'>Sign in with Apple</a>
                             </div>
                         </div>
 
