@@ -1,8 +1,10 @@
 import React from 'react'
 import googleIcon from '../asset/googleIcon.png'
 import appleIcon from '../asset/appleIcon.png'
+import { useAuth0 } from "@auth0/auth0-react";
 
 const SignIn = () => {
+    const { loginWithRedirect } = useAuth0();
     return (
         <div>
 
@@ -24,7 +26,7 @@ const SignIn = () => {
                         <div className='flex mt-4 space-x-4'>
                             <div className='flex items-center bg-white py-2 px-3 md:px-7 rounded-xl cursor-pointer'>
                                 <img src={googleIcon} alt="" className='w-[14px] h-[14px]' />
-                                <a href="/google" className='text-[10px] md:text-xs font-normal ml-2 text-[#858585]'>Sign in with Google</a>
+                                <a href="/google" onClick={() => loginWithRedirect()} className='text-[10px] md:text-xs font-normal ml-2 text-[#858585]'>Sign in with Google</a>
                             </div>
 
                             <div className='flex items-center bg-white py-2 px-3 md:px-7 rounded-xl cursor-pointer'>
